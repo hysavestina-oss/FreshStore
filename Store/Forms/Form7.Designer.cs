@@ -32,6 +32,9 @@
             btnShfaqRaport = new Button();
             dvgRaport = new DataGridView();
             panel1 = new Panel();
+            btnRaport = new Button();
+            btnFurnitoret = new Button();
+            btnKategorite = new Button();
             btnDil = new Button();
             btnShitje = new Button();
             btnKlientet = new Button();
@@ -68,6 +71,7 @@
             btnShfaqRaport.TabIndex = 60;
             btnShfaqRaport.Text = "Shfaqe Raportin";
             btnShfaqRaport.UseVisualStyleBackColor = false;
+            btnShfaqRaport.Click += btnShfaqRaport_Click;
             // 
             // dvgRaport
             // 
@@ -82,6 +86,9 @@
             // panel1
             // 
             panel1.BackColor = Color.Tan;
+            panel1.Controls.Add(btnRaport);
+            panel1.Controls.Add(btnFurnitoret);
+            panel1.Controls.Add(btnKategorite);
             panel1.Controls.Add(btnDil);
             panel1.Controls.Add(btnShitje);
             panel1.Controls.Add(btnKlientet);
@@ -92,6 +99,45 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(311, 728);
             panel1.TabIndex = 52;
+            // 
+            // btnRaport
+            // 
+            btnRaport.BackColor = Color.Moccasin;
+            btnRaport.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRaport.Location = new Point(82, 517);
+            btnRaport.Margin = new Padding(4, 3, 4, 3);
+            btnRaport.Name = "btnRaport";
+            btnRaport.Size = new Size(134, 38);
+            btnRaport.TabIndex = 10;
+            btnRaport.Text = "Raport";
+            btnRaport.UseVisualStyleBackColor = false;
+            btnRaport.Click += btnRaport_Click;
+            // 
+            // btnFurnitoret
+            // 
+            btnFurnitoret.BackColor = Color.Moccasin;
+            btnFurnitoret.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFurnitoret.Location = new Point(82, 453);
+            btnFurnitoret.Margin = new Padding(4, 3, 4, 3);
+            btnFurnitoret.Name = "btnFurnitoret";
+            btnFurnitoret.Size = new Size(134, 38);
+            btnFurnitoret.TabIndex = 9;
+            btnFurnitoret.Text = "Furintoret";
+            btnFurnitoret.UseVisualStyleBackColor = false;
+            btnFurnitoret.Click += btnFurnitoret_Click;
+            // 
+            // btnKategorite
+            // 
+            btnKategorite.BackColor = Color.Moccasin;
+            btnKategorite.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKategorite.Location = new Point(82, 397);
+            btnKategorite.Margin = new Padding(4, 3, 4, 3);
+            btnKategorite.Name = "btnKategorite";
+            btnKategorite.Size = new Size(134, 38);
+            btnKategorite.TabIndex = 8;
+            btnKategorite.Text = "Kategorite";
+            btnKategorite.UseVisualStyleBackColor = false;
+            btnKategorite.Click += btnKategorite_Click;
             // 
             // btnDil
             // 
@@ -104,6 +150,7 @@
             btnDil.TabIndex = 4;
             btnDil.Text = "Dil";
             btnDil.UseVisualStyleBackColor = false;
+            btnDil.Click += btnDil_Click;
             // 
             // btnShitje
             // 
@@ -116,6 +163,7 @@
             btnShitje.TabIndex = 3;
             btnShitje.Text = "Shitje";
             btnShitje.UseVisualStyleBackColor = false;
+            btnShitje.Click += btnShitje_Click;
             // 
             // btnKlientet
             // 
@@ -128,6 +176,7 @@
             btnKlientet.TabIndex = 2;
             btnKlientet.Text = "Klientet";
             btnKlientet.UseVisualStyleBackColor = false;
+            btnKlientet.Click += btnKlientet_Click;
             // 
             // btnProduktet
             // 
@@ -140,6 +189,7 @@
             btnProduktet.TabIndex = 1;
             btnProduktet.Text = "Produktet";
             btnProduktet.UseVisualStyleBackColor = false;
+            btnProduktet.Click += btnProduktet_Click;
             // 
             // pictureBox1
             // 
@@ -243,5 +293,8 @@
         private Label lblNgaData;
         private Label label3;
         private Label label2;
+        private Button btnRaport;
+        private Button btnFurnitoret;
+        private Button btnKategorite;
     }
 }

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            btnRaport = new Button();
+            btnFurnitoret = new Button();
+            btnKategorite = new Button();
             btnDil = new Button();
             btnShitje = new Button();
             btnKlientet = new Button();
@@ -50,6 +53,7 @@
             label1 = new Label();
             cmbFurnitori = new ComboBox();
             lblFurnitori = new Label();
+            lblOperatori = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvProduktet).BeginInit();
@@ -58,6 +62,9 @@
             // panel1
             // 
             panel1.BackColor = Color.Tan;
+            panel1.Controls.Add(btnRaport);
+            panel1.Controls.Add(btnFurnitoret);
+            panel1.Controls.Add(btnKategorite);
             panel1.Controls.Add(btnDil);
             panel1.Controls.Add(btnShitje);
             panel1.Controls.Add(btnKlientet);
@@ -68,6 +75,45 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(311, 616);
             panel1.TabIndex = 0;
+            // 
+            // btnRaport
+            // 
+            btnRaport.BackColor = Color.Moccasin;
+            btnRaport.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRaport.Location = new Point(73, 465);
+            btnRaport.Margin = new Padding(4, 3, 4, 3);
+            btnRaport.Name = "btnRaport";
+            btnRaport.Size = new Size(134, 38);
+            btnRaport.TabIndex = 7;
+            btnRaport.Text = "Raport";
+            btnRaport.UseVisualStyleBackColor = false;
+            btnRaport.Click += btnRaport_Click;
+            // 
+            // btnFurnitoret
+            // 
+            btnFurnitoret.BackColor = Color.Moccasin;
+            btnFurnitoret.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFurnitoret.Location = new Point(73, 401);
+            btnFurnitoret.Margin = new Padding(4, 3, 4, 3);
+            btnFurnitoret.Name = "btnFurnitoret";
+            btnFurnitoret.Size = new Size(134, 38);
+            btnFurnitoret.TabIndex = 6;
+            btnFurnitoret.Text = "Furintoret";
+            btnFurnitoret.UseVisualStyleBackColor = false;
+            btnFurnitoret.Click += btnFurnitoret_Click;
+            // 
+            // btnKategorite
+            // 
+            btnKategorite.BackColor = Color.Moccasin;
+            btnKategorite.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKategorite.Location = new Point(73, 345);
+            btnKategorite.Margin = new Padding(4, 3, 4, 3);
+            btnKategorite.Name = "btnKategorite";
+            btnKategorite.Size = new Size(134, 38);
+            btnKategorite.TabIndex = 5;
+            btnKategorite.Text = "Kategorite";
+            btnKategorite.UseVisualStyleBackColor = false;
+            btnKategorite.Click += btnKategorite_Click;
             // 
             // btnDil
             // 
@@ -80,6 +126,7 @@
             btnDil.TabIndex = 4;
             btnDil.Text = "Dil";
             btnDil.UseVisualStyleBackColor = false;
+            btnDil.Click += btnDil_Click;
             // 
             // btnShitje
             // 
@@ -92,6 +139,7 @@
             btnShitje.TabIndex = 3;
             btnShitje.Text = "Shitje";
             btnShitje.UseVisualStyleBackColor = false;
+            btnShitje.Click += btnShitje_Click;
             // 
             // btnKlientet
             // 
@@ -104,6 +152,7 @@
             btnKlientet.TabIndex = 2;
             btnKlientet.Text = "Klientet";
             btnKlientet.UseVisualStyleBackColor = false;
+            btnKlientet.Click += btnKlientet_Click;
             // 
             // btnProduktet
             // 
@@ -116,6 +165,7 @@
             btnProduktet.TabIndex = 1;
             btnProduktet.Text = "Produktet";
             btnProduktet.UseVisualStyleBackColor = false;
+            btnProduktet.Click += btnProduktet_Click;
             // 
             // pictureBox1
             // 
@@ -143,6 +193,8 @@
             txtSasia.Name = "txtSasia";
             txtSasia.Size = new Size(182, 34);
             txtSasia.TabIndex = 3;
+            txtSasia.TextChanged += txtSasia_TextChanged;
+            txtSasia.KeyPress += txtSasia_KeyPress;
             // 
             // txtCmimi
             // 
@@ -151,6 +203,7 @@
             txtCmimi.Name = "txtCmimi";
             txtCmimi.Size = new Size(182, 34);
             txtCmimi.TabIndex = 4;
+            txtCmimi.KeyPress += txtCmimi_KeyPress;
             // 
             // lblEmriProduktit
             // 
@@ -218,6 +271,7 @@
             btnShto.TabIndex = 12;
             btnShto.Text = "Shto";
             btnShto.UseVisualStyleBackColor = false;
+            btnShto.Click += btnShto_Click;
             // 
             // btnPastro
             // 
@@ -230,6 +284,7 @@
             btnPastro.TabIndex = 13;
             btnPastro.Text = "Pastro";
             btnPastro.UseVisualStyleBackColor = false;
+            btnPastro.Click += btnPastro_Click;
             // 
             // btnUpdate
             // 
@@ -242,6 +297,7 @@
             btnUpdate.TabIndex = 14;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnFshij
             // 
@@ -254,6 +310,7 @@
             btnFshij.TabIndex = 15;
             btnFshij.Text = "Fshije";
             btnFshij.UseVisualStyleBackColor = false;
+            btnFshij.Click += btnFshij_Click;
             // 
             // label1
             // 
@@ -282,12 +339,21 @@
             lblFurnitori.TabIndex = 17;
             lblFurnitori.Text = "Furnitori";
             // 
+            // lblOperatori
+            // 
+            lblOperatori.AutoSize = true;
+            lblOperatori.Location = new Point(1151, 9);
+            lblOperatori.Name = "lblOperatori";
+            lblOperatori.Size = new Size(0, 28);
+            lblOperatori.TabIndex = 19;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Moccasin;
             ClientSize = new Size(1337, 609);
+            Controls.Add(lblOperatori);
             Controls.Add(cmbFurnitori);
             Controls.Add(lblFurnitori);
             Controls.Add(label1);
@@ -341,5 +407,9 @@
         private Label label1;
         private ComboBox cmbFurnitori;
         private Label lblFurnitori;
+        private Button btnRaport;
+        private Button btnFurnitoret;
+        private Button btnKategorite;
+        private Label lblOperatori;
     }
 }

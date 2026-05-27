@@ -36,6 +36,9 @@
             lblEmriKategorise = new Label();
             txtEmriKategorise = new TextBox();
             panel1 = new Panel();
+            btnRaport = new Button();
+            btnFurnitoret = new Button();
+            btnKategorite = new Button();
             btnDil = new Button();
             btnShitje = new Button();
             btnKlientet = new Button();
@@ -68,6 +71,7 @@
             btnFshij.TabIndex = 30;
             btnFshij.Text = "Fshije";
             btnFshij.UseVisualStyleBackColor = false;
+            btnFshij.Click += btnFshij_Click;
             // 
             // btnUpdate
             // 
@@ -80,6 +84,7 @@
             btnUpdate.TabIndex = 29;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnPastro
             // 
@@ -92,6 +97,7 @@
             btnPastro.TabIndex = 28;
             btnPastro.Text = "Pastro";
             btnPastro.UseVisualStyleBackColor = false;
+            btnPastro.Click += btnPastro_Click;
             // 
             // dgvKategorite
             // 
@@ -124,6 +130,9 @@
             // panel1
             // 
             panel1.BackColor = Color.Tan;
+            panel1.Controls.Add(btnRaport);
+            panel1.Controls.Add(btnFurnitoret);
+            panel1.Controls.Add(btnKategorite);
             panel1.Controls.Add(btnDil);
             panel1.Controls.Add(btnShitje);
             panel1.Controls.Add(btnKlientet);
@@ -134,6 +143,45 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(311, 625);
             panel1.TabIndex = 17;
+            // 
+            // btnRaport
+            // 
+            btnRaport.BackColor = Color.Moccasin;
+            btnRaport.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRaport.Location = new Point(73, 464);
+            btnRaport.Margin = new Padding(4, 3, 4, 3);
+            btnRaport.Name = "btnRaport";
+            btnRaport.Size = new Size(134, 38);
+            btnRaport.TabIndex = 10;
+            btnRaport.Text = "Raport";
+            btnRaport.UseVisualStyleBackColor = false;
+            btnRaport.Click += btnRaport_Click;
+            // 
+            // btnFurnitoret
+            // 
+            btnFurnitoret.BackColor = Color.Moccasin;
+            btnFurnitoret.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFurnitoret.Location = new Point(73, 400);
+            btnFurnitoret.Margin = new Padding(4, 3, 4, 3);
+            btnFurnitoret.Name = "btnFurnitoret";
+            btnFurnitoret.Size = new Size(134, 38);
+            btnFurnitoret.TabIndex = 9;
+            btnFurnitoret.Text = "Furintoret";
+            btnFurnitoret.UseVisualStyleBackColor = false;
+            btnFurnitoret.Click += btnFurnitoret_Click;
+            // 
+            // btnKategorite
+            // 
+            btnKategorite.BackColor = Color.Moccasin;
+            btnKategorite.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKategorite.Location = new Point(73, 344);
+            btnKategorite.Margin = new Padding(4, 3, 4, 3);
+            btnKategorite.Name = "btnKategorite";
+            btnKategorite.Size = new Size(134, 38);
+            btnKategorite.TabIndex = 8;
+            btnKategorite.Text = "Kategorite";
+            btnKategorite.UseVisualStyleBackColor = false;
+            btnKategorite.Click += btnKategorite_Click;
             // 
             // btnDil
             // 
@@ -146,6 +194,7 @@
             btnDil.TabIndex = 4;
             btnDil.Text = "Dil";
             btnDil.UseVisualStyleBackColor = false;
+            btnDil.Click += btnDil_Click;
             // 
             // btnShitje
             // 
@@ -158,6 +207,7 @@
             btnShitje.TabIndex = 3;
             btnShitje.Text = "Shitje";
             btnShitje.UseVisualStyleBackColor = false;
+            btnShitje.Click += btnShitje_Click;
             // 
             // btnKlientet
             // 
@@ -170,6 +220,7 @@
             btnKlientet.TabIndex = 2;
             btnKlientet.Text = "Klientet";
             btnKlientet.UseVisualStyleBackColor = false;
+            btnKlientet.Click += btnKlientet_Click;
             // 
             // btnProduktet
             // 
@@ -182,6 +233,7 @@
             btnProduktet.TabIndex = 1;
             btnProduktet.Text = "Produktet";
             btnProduktet.UseVisualStyleBackColor = false;
+            btnProduktet.Click += btnProduktet_Click;
             // 
             // pictureBox1
             // 
@@ -205,6 +257,7 @@
             btnShto.TabIndex = 32;
             btnShto.Text = "Shto";
             btnShto.UseVisualStyleBackColor = false;
+            btnShto.Click += btnShto_Click;
             // 
             // frmKategoria
             // 
@@ -223,6 +276,7 @@
             Controls.Add(panel1);
             Name = "frmKategoria";
             Text = "Kategoria";
+            Load += frmKategoria_Load;
             ((System.ComponentModel.ISupportInitialize)dgvKategorite).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -246,5 +300,8 @@
         private Button btnProduktet;
         private PictureBox pictureBox1;
         private Button btnShto;
+        private Button btnRaport;
+        private Button btnFurnitoret;
+        private Button btnKategorite;
     }
 }

@@ -67,14 +67,16 @@
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(241, 31);
             txtUsername.TabIndex = 3;
+            txtUsername.TextChanged += txtUsername_TextChanged;
             // 
             // txtPassword
             // 
             txtPassword.BackColor = Color.Tan;
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Location = new Point(78, 245);
-            txtPassword.Multiline = true;
+            txtPassword.Multiline = false;
             txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(243, 31);
             txtPassword.TabIndex = 4;
             txtPassword.UseSystemPasswordChar = true;
@@ -118,6 +120,7 @@
             Controls.Add(lblUsername);
             Name = "Form1";
             Text = "Fresh Store";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
