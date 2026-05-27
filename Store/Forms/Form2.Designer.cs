@@ -42,7 +42,7 @@
             lblSasia = new Label();
             lblCmimi = new Label();
             cmbKategoria = new ComboBox();
-            dataGridView1 = new DataGridView();
+            dgvProduktet = new DataGridView();
             btnShto = new Button();
             btnPastro = new Button();
             btnUpdate = new Button();
@@ -52,7 +52,7 @@
             lblFurnitori = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProduktet).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -197,24 +197,24 @@
             cmbKategoria.Size = new Size(182, 36);
             cmbKategoria.TabIndex = 10;
             // 
-            // dataGridView1
+            // dgvProduktet
             // 
-            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(564, 50);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(761, 400);
-            dataGridView1.TabIndex = 11;
+            dgvProduktet.BackgroundColor = SystemColors.ButtonHighlight;
+            dgvProduktet.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProduktet.Location = new Point(564, 50);
+            dgvProduktet.Name = "dgvProduktet";
+            dgvProduktet.RowHeadersWidth = 62;
+            dgvProduktet.Size = new Size(761, 400);
+            dgvProduktet.TabIndex = 11;
             // 
             // btnShto
             // 
             btnShto.BackColor = Color.Tan;
             btnShto.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnShto.Location = new Point(303, 507);
+            btnShto.Location = new Point(305, 522);
             btnShto.Margin = new Padding(4, 3, 4, 3);
             btnShto.Name = "btnShto";
-            btnShto.Size = new Size(134, 38);
+            btnShto.Size = new Size(138, 38);
             btnShto.TabIndex = 12;
             btnShto.Text = "Shto";
             btnShto.UseVisualStyleBackColor = false;
@@ -223,7 +223,7 @@
             // 
             btnPastro.BackColor = Color.Tan;
             btnPastro.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPastro.Location = new Point(1167, 507);
+            btnPastro.Location = new Point(1175, 522);
             btnPastro.Margin = new Padding(4, 3, 4, 3);
             btnPastro.Name = "btnPastro";
             btnPastro.Size = new Size(134, 38);
@@ -258,7 +258,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(899, 37);
+            label1.Location = new Point(899, 9);
             label1.Name = "label1";
             label1.Size = new Size(106, 28);
             label1.TabIndex = 16;
@@ -295,7 +295,7 @@
             Controls.Add(btnUpdate);
             Controls.Add(btnPastro);
             Controls.Add(btnShto);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvProduktet);
             Controls.Add(cmbKategoria);
             Controls.Add(lblCmimi);
             Controls.Add(lblSasia);
@@ -312,7 +312,7 @@
             Load += Form2_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProduktet).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -333,7 +333,7 @@
         private Label lblSasia;
         private Label lblCmimi;
         private ComboBox cmbKategoria;
-        private DataGridView dataGridView1;
+        private DataGridView dgvProduktet;
         private Button btnShto;
         private Button btnPastro;
         private Button btnUpdate;

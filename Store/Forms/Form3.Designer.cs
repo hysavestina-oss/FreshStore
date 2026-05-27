@@ -1,6 +1,6 @@
 ﻿namespace Store
 {
-    partial class FrmFurnitoret
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,60 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblNrTelefoniFurnitorit = new Label();
-            lblKlientet = new Label();
             btnFshij = new Button();
             btnUpdate = new Button();
             btnPastro = new Button();
             btnShto = new Button();
-            dataGridView1 = new DataGridView();
-            lblEmailFurnitorit = new Label();
-            lblEmriFurnitorit = new Label();
-            txtEmailFurnitorit = new TextBox();
-            txtNrTelefoniFurnitorit = new TextBox();
-            txtEmriFurnitorit = new TextBox();
+            dgvKlientet = new DataGridView();
+            lblEmail = new Label();
+            lblKlienti = new Label();
+            txtEmail = new TextBox();
+            txtNrTelefoni = new TextBox();
+            txtKlienti = new TextBox();
             panel1 = new Panel();
             btnDil = new Button();
             btnShitje = new Button();
             btnKlientet = new Button();
             btnProduktet = new Button();
             pictureBox1 = new PictureBox();
-            lblAdresa = new Label();
-            txtAdresa = new TextBox();
-            label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            lblKlientet = new Label();
+            lblNrTelefoni = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvKlientet).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // lblNrTelefoniFurnitorit
-            // 
-            lblNrTelefoniFurnitorit.AutoSize = true;
-            lblNrTelefoniFurnitorit.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblNrTelefoniFurnitorit.Location = new Point(324, 170);
-            lblNrTelefoniFurnitorit.Name = "lblNrTelefoniFurnitorit";
-            lblNrTelefoniFurnitorit.Size = new Size(118, 28);
-            lblNrTelefoniFurnitorit.TabIndex = 44;
-            lblNrTelefoniFurnitorit.Text = "Nr Telefoni";
-            // 
-            // lblKlientet
-            // 
-            lblKlientet.AutoSize = true;
-            lblKlientet.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblKlientet.Location = new Point(865, 29);
-            lblKlientet.Name = "lblKlientet";
-            lblKlientet.Size = new Size(0, 28);
-            lblKlientet.TabIndex = 43;
             // 
             // btnFshij
             // 
             btnFshij.BackColor = Color.Tan;
             btnFshij.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnFshij.Location = new Point(918, 523);
+            btnFshij.Location = new Point(901, 523);
             btnFshij.Margin = new Padding(4, 3, 4, 3);
             btnFshij.Name = "btnFshij";
             btnFshij.Size = new Size(134, 38);
-            btnFshij.TabIndex = 42;
+            btnFshij.TabIndex = 29;
             btnFshij.Text = "Fshije";
             btnFshij.UseVisualStyleBackColor = false;
             // 
@@ -89,11 +67,11 @@
             // 
             btnUpdate.BackColor = Color.Tan;
             btnUpdate.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnUpdate.Location = new Point(676, 523);
+            btnUpdate.Location = new Point(613, 523);
             btnUpdate.Margin = new Padding(4, 3, 4, 3);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(134, 38);
-            btnUpdate.TabIndex = 41;
+            btnUpdate.TabIndex = 28;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
             // 
@@ -101,11 +79,11 @@
             // 
             btnPastro.BackColor = Color.Tan;
             btnPastro.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPastro.Location = new Point(1177, 523);
+            btnPastro.Location = new Point(1160, 523);
             btnPastro.Margin = new Padding(4, 3, 4, 3);
             btnPastro.Name = "btnPastro";
             btnPastro.Size = new Size(134, 38);
-            btnPastro.TabIndex = 40;
+            btnPastro.TabIndex = 27;
             btnPastro.Text = "Pastro";
             btnPastro.UseVisualStyleBackColor = false;
             // 
@@ -113,67 +91,68 @@
             // 
             btnShto.BackColor = Color.Tan;
             btnShto.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnShto.Location = new Point(334, 506);
+            btnShto.Location = new Point(317, 506);
             btnShto.Margin = new Padding(4, 3, 4, 3);
             btnShto.Name = "btnShto";
             btnShto.Size = new Size(134, 38);
-            btnShto.TabIndex = 39;
+            btnShto.TabIndex = 26;
             btnShto.Text = "Shto";
             btnShto.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgvKlientet
             // 
-            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(581, 116);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(761, 356);
-            dataGridView1.TabIndex = 38;
+            dgvKlientet.BackgroundColor = SystemColors.ButtonHighlight;
+            dgvKlientet.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvKlientet.Location = new Point(564, 116);
+            dgvKlientet.Name = "dgvKlientet";
+            dgvKlientet.RowHeadersWidth = 62;
+            dgvKlientet.Size = new Size(761, 356);
+            dgvKlientet.TabIndex = 25;
             // 
-            // lblEmailFurnitorit
+            // lblEmail
             // 
-            lblEmailFurnitorit.AutoSize = true;
-            lblEmailFurnitorit.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblEmailFurnitorit.Location = new Point(324, 266);
-            lblEmailFurnitorit.Name = "lblEmailFurnitorit";
-            lblEmailFurnitorit.Size = new Size(64, 28);
-            lblEmailFurnitorit.TabIndex = 37;
-            lblEmailFurnitorit.Text = "Email";
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblEmail.Location = new Point(307, 266);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(64, 28);
+            lblEmail.TabIndex = 23;
+            lblEmail.Text = "Email";
             // 
-            // lblEmriFurnitorit
+            // lblKlienti
             // 
-            lblEmriFurnitorit.AutoSize = true;
-            lblEmriFurnitorit.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblEmriFurnitorit.Location = new Point(324, 72);
-            lblEmriFurnitorit.Name = "lblEmriFurnitorit";
-            lblEmriFurnitorit.Size = new Size(151, 28);
-            lblEmriFurnitorit.TabIndex = 36;
-            lblEmriFurnitorit.Text = "Emri Furnitorit";
+            lblKlienti.AutoSize = true;
+            lblKlienti.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblKlienti.Location = new Point(307, 72);
+            lblKlienti.Name = "lblKlienti";
+            lblKlienti.Size = new Size(74, 28);
+            lblKlienti.TabIndex = 20;
+            lblKlienti.Text = "Klienti";
+            lblKlienti.Click += lblKlienti_Click;
             // 
-            // txtEmailFurnitorit
+            // txtEmail
             // 
-            txtEmailFurnitorit.BackColor = Color.Tan;
-            txtEmailFurnitorit.Location = new Point(324, 315);
-            txtEmailFurnitorit.Name = "txtEmailFurnitorit";
-            txtEmailFurnitorit.Size = new Size(182, 31);
-            txtEmailFurnitorit.TabIndex = 35;
+            txtEmail.BackColor = Color.Tan;
+            txtEmail.Location = new Point(307, 315);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(227, 31);
+            txtEmail.TabIndex = 19;
             // 
-            // txtNrTelefoniFurnitorit
+            // txtNrTelefoni
             // 
-            txtNrTelefoniFurnitorit.BackColor = Color.Tan;
-            txtNrTelefoniFurnitorit.Location = new Point(324, 214);
-            txtNrTelefoniFurnitorit.Name = "txtNrTelefoniFurnitorit";
-            txtNrTelefoniFurnitorit.Size = new Size(182, 31);
-            txtNrTelefoniFurnitorit.TabIndex = 34;
+            txtNrTelefoni.BackColor = Color.Tan;
+            txtNrTelefoni.Location = new Point(307, 214);
+            txtNrTelefoni.Name = "txtNrTelefoni";
+            txtNrTelefoni.Size = new Size(182, 31);
+            txtNrTelefoni.TabIndex = 18;
             // 
-            // txtEmriFurnitorit
+            // txtKlienti
             // 
-            txtEmriFurnitorit.BackColor = Color.Tan;
-            txtEmriFurnitorit.Location = new Point(324, 119);
-            txtEmriFurnitorit.Name = "txtEmriFurnitorit";
-            txtEmriFurnitorit.Size = new Size(182, 31);
-            txtEmriFurnitorit.TabIndex = 33;
+            txtKlienti.BackColor = Color.Tan;
+            txtKlienti.Location = new Point(307, 116);
+            txtKlienti.Name = "txtKlienti";
+            txtKlienti.Size = new Size(182, 31);
+            txtKlienti.TabIndex = 17;
             // 
             // panel1
             // 
@@ -183,11 +162,11 @@
             panel1.Controls.Add(btnKlientet);
             panel1.Controls.Add(btnProduktet);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(-6, -4);
+            panel1.Location = new Point(-23, -4);
             panel1.Margin = new Padding(4, 3, 4, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(311, 616);
-            panel1.TabIndex = 32;
+            panel1.TabIndex = 16;
             // 
             // btnDil
             // 
@@ -248,59 +227,49 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // lblAdresa
+            // lblKlientet
             // 
-            lblAdresa.AutoSize = true;
-            lblAdresa.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblAdresa.Location = new Point(324, 376);
-            lblAdresa.Name = "lblAdresa";
-            lblAdresa.Size = new Size(77, 28);
-            lblAdresa.TabIndex = 46;
-            lblAdresa.Text = "Adresa";
+            lblKlientet.AutoSize = true;
+            lblKlientet.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblKlientet.Location = new Point(848, 29);
+            lblKlientet.Name = "lblKlientet";
+            lblKlientet.Size = new Size(87, 28);
+            lblKlientet.TabIndex = 30;
+            lblKlientet.Text = "Klientet";
             // 
-            // txtAdresa
+            // lblNrTelefoni
             // 
-            txtAdresa.BackColor = Color.Tan;
-            txtAdresa.Location = new Point(324, 425);
-            txtAdresa.Name = "txtAdresa";
-            txtAdresa.Size = new Size(182, 31);
-            txtAdresa.TabIndex = 45;
+            lblNrTelefoni.AutoSize = true;
+            lblNrTelefoni.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblNrTelefoni.Location = new Point(307, 170);
+            lblNrTelefoni.Name = "lblNrTelefoni";
+            lblNrTelefoni.Size = new Size(118, 28);
+            lblNrTelefoni.TabIndex = 31;
+            lblNrTelefoni.Text = "Nr Telefoni";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label1.Location = new Point(788, 29);
-            label1.Name = "label1";
-            label1.Size = new Size(107, 28);
-            label1.TabIndex = 47;
-            label1.Text = "Furnitoret";
-            // 
-            // FrmFurnitoret
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Moccasin;
             ClientSize = new Size(1337, 609);
-            Controls.Add(label1);
-            Controls.Add(lblAdresa);
-            Controls.Add(txtAdresa);
-            Controls.Add(lblNrTelefoniFurnitorit);
+            Controls.Add(lblNrTelefoni);
             Controls.Add(lblKlientet);
             Controls.Add(btnFshij);
             Controls.Add(btnUpdate);
             Controls.Add(btnPastro);
             Controls.Add(btnShto);
-            Controls.Add(dataGridView1);
-            Controls.Add(lblEmailFurnitorit);
-            Controls.Add(lblEmriFurnitorit);
-            Controls.Add(txtEmailFurnitorit);
-            Controls.Add(txtNrTelefoniFurnitorit);
-            Controls.Add(txtEmriFurnitorit);
+            Controls.Add(dgvKlientet);
+            Controls.Add(lblEmail);
+            Controls.Add(lblKlienti);
+            Controls.Add(txtEmail);
+            Controls.Add(txtNrTelefoni);
+            Controls.Add(txtKlienti);
             Controls.Add(panel1);
-            Name = "FrmFurnitoret";
-            Text = "Furnitoret";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Name = "Form3";
+            Text = "Klientet";
+            Load += Form3_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvKlientet).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -309,26 +278,26 @@
 
         #endregion
 
-        private Label lblNrTelefoniFurnitorit;
-        private Label lblKlientet;
         private Button btnFshij;
         private Button btnUpdate;
         private Button btnPastro;
         private Button btnShto;
-        private DataGridView dataGridView1;
-        private Label lblEmailFurnitorit;
-        private Label lblEmriFurnitorit;
-        private TextBox txtEmailFurnitorit;
-        private TextBox txtNrTelefoniFurnitorit;
-        private TextBox txtEmriFurnitorit;
+        private DataGridView dgvKlientet;
+        private ComboBox comboBox1;
+        private Label lblEmail;
+        private Label lblSasia;
+        private Label lblKategoria;
+        private Label lblKlienti;
+        private TextBox txtEmail;
+        private TextBox txtNrTelefoni;
+        private TextBox txtKlienti;
         private Panel panel1;
         private Button btnDil;
         private Button btnShitje;
         private Button btnKlientet;
         private Button btnProduktet;
         private PictureBox pictureBox1;
-        private Label lblAdresa;
-        private TextBox txtAdresa;
-        private Label label1;
+        private Label lblKlientet;
+        private Label lblNrTelefoni;
     }
 }

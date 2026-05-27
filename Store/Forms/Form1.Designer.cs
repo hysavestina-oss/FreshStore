@@ -34,7 +34,6 @@
             txtPassword = new TextBox();
             btnHyr = new Button();
             pictureBox1 = new PictureBox();
-            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -78,6 +77,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(243, 31);
             txtPassword.TabIndex = 4;
+            txtPassword.UseSystemPasswordChar = true;
             // 
             // btnHyr
             // 
@@ -104,25 +104,12 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click_1;
             // 
-            // comboBox1
-            // 
-            comboBox1.BackColor = Color.Tan;
-            comboBox1.Font = new Font("Arial", 10F, FontStyle.Bold | FontStyle.Italic);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Admin", "Operator" });
-            comboBox1.Location = new Point(78, 296);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 32);
-            comboBox1.TabIndex = 7;
-            comboBox1.Text = "Zgjidh Rolin:";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.NavajoWhite;
             ClientSize = new Size(819, 558);
-            Controls.Add(comboBox1);
             Controls.Add(pictureBox1);
             Controls.Add(btnHyr);
             Controls.Add(txtPassword);
@@ -143,6 +130,5 @@
         private TextBox txtPassword;
         private Button btnHyr;
         private PictureBox pictureBox1;
-        private ComboBox comboBox1;
     }
 }

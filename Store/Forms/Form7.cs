@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Store
 {
-    public partial class Form7 : Form
+    public partial class Raport : Form
     {
-        public Form7()
+        public Raport()
         {
             InitializeComponent();
         }
